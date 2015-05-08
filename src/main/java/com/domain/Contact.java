@@ -10,31 +10,39 @@ import javax.persistence.*;
  */
 
 @Entity
-@Table(name = "CONTACTS")
+//@Table(name = "CONTACTS")
+@Table(name = "contacts")
 public class Contact {
 
     @Id
-    @Column(name = "ID")
+//    @Column(name = "ID")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     @NotNull
     private Integer id;
 
-    @Column(name = "FIO")
+//    @Column(name = "FIO")
+    @Column(name = "fio")
     private String fio;
 
-    @Column(name = "EMAIL")
+//    @Column(name = "EMAIL")
+    @Column(name = "email")
     private String email;
 
-    @Column(name = "ADDRESS")
+//    @Column(name = "ADDRESS")
+    @Column(name = "address")
     private String address;
 
-    @Column(name = "TELEPHONE")
+//    @Column(name = "TELEPHONE")
+    @Column(name = "telephone")
     private String telephone;
 
-    @Column(name = "ORGANIZATION")
+//    @Column(name = "ORGANIZATION")
+    @Column(name = "organization")
     private String organization;
 
-    @Column(name = "POSITION")
+//    @Column(name = "POSITION")
+    @Column(name = "position")
     @Enumerated(EnumType.STRING)
     private Position position;
 

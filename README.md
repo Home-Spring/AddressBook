@@ -13,3 +13,19 @@
 ###Цели
 
 * В этом приложении демонстрируются правила защищенного доступа (Spring Security) которые прописываются в XML-файле конфигурации
+
+
+###[ jdbc.properties ]
+
+* `src/main/webapp/WEB-INF/jdbc.properties`
+- jdbc.driverClassName= com.mysql.jdbc.Driver
+- jdbc.dialect=org.hibernate.dialect.MySQLDialect
+- jdbc.databaseurl=jdbc:mysql://localhost:3306/addressbook
+- jdbc.username=addressbook (root)
+- jdbc.password=1234        (1111)
+
+
+###Конфиогурация Spring(а) выполняется черех XML
+
+* `src/main/webapp/WEB-INF/web.xml`
+* `src/main/webapp/WEB-INF/spring/`: 'servlet-context.xml', 'data.xml', 'security.xml', 'appServer/controllers.xml'
